@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  align-items: center;
+
+  &--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6.4rem;
+
+    @media screen and (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.row {
+  display: flex;
+
+  &--end {
+    justify-content: end;
+  }
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+}

@@ -1,0 +1,22 @@
+.awards {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4.8rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-weight: 700;
+  }
+
+  &__film {
+    font-style: italic;
+    display: block;
+  }
+}

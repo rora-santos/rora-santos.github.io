@@ -1,0 +1,29 @@
+@mixin positionCentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin linkReset {
+  display: inline-block;
+  text-decoration: none;
+  color: $clr-white;
+}
+
+@mixin headerContent {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient($clr-white, $clr-white);
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s ease-in-out;
+  position: absolute;
+}
+
+@mixin backgroundConst {
+  background-size: cover;
+  background-position: top;
+}

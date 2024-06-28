@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Boucherie Block";
+  src: url(/assets/fonts/boucherie-block.ttf);
+}
+
+@font-face {
+  font-family: "Maru Gothic";
+  src: url(/assets/fonts/maru-gothic.ttf);
+}
+
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: $bp-lg) {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Maru Gothic";
+  line-height: 1.6;
+}
+
+.heading {
+  line-height: 1.4;
+
+  &--main,
+  &--sub {
+    display: block;
+  }
+
+  &--primary {
+    text-transform: uppercase;
+
+    &--main {
+      font-family: "Boucherie Block";
+      font-size: 10rem;
+      letter-spacing: 2rem;
+      margin-bottom: 1.6rem;
+      animation: slideInLeft 1s ease;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        @include headerContent;
+        top: 42%;
+        left: -30%;
+        transform: translate(-30%, -42%);
+        background-position: left-bottom;
+        animation: animateBackground 1s ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+      }
+
+      &::after {
+        @include headerContent;
+        background-position: right bottom;
+        top: 58%;
+        right: -40%;
+        transform: translate(0%, -58%);
+        animation: animateBackground 1s ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+      }
+
+      @media screen and (max-width: $bp-md) {
+        font-size: 6.4rem;
+      }
+
+      @media screen and (max-width: $bp-sm) {
+        font-size: 5.2rem;
+        line-height: 1.2;
+      }
+    }
+
+    &--sub {
+      font-size: 2.4rem;
+      letter-spacing: 2rem;
+      animation: slideInRight 1s ease;
+
+      @media screen and (max-width: $bp-md) {
+        font-size: 1.6rem;
+        line-height: 1.8;
+      }
+
+      @media screen and (max-width: $bp-sm) {
+        // letter-spacing: 0.2rem;
+      }
+    }
+  }
+
+  &--secondary {
+    font-size: 4.8rem;
+
+    @media screen and (max-width: $bp-md) {
+      font-size: 3.6rem;
+    }
+
+    @media screen and (max-width: $bp-xs) {
+      font-size: 3rem;
+    }
+  }
+
+  &--tertiary {
+    font-family: "Boucherie Block";
+    font-size: 10rem;
+    line-height: 1;
+
+    @media screen and (max-width: $bp-md) {
+      font-size: 6.4rem;
+    }
+  }
+
+  &--message {
+    display: block;
+  }
+
+  &--gallery {
+    font-size: 3.6rem;
+  }
+
+  &--greetings {
+    font-family: "Boucherie Block";
+    font-size: 6.4rem;
+    position: relative;
+    margin-bottom: 6.4rem;
+
+    @media screen and (max-width: $bp-sm) {
+      font-size: 5.2rem;
+    }
+
+    & > * {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      width: 100%;
+    }
+  }
+}
