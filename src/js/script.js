@@ -87,6 +87,7 @@ const emailFunction = (e) => {
       title: "Message Sent!",
       text: "Message sent successfully!",
       icon: "success",
+      confirmButtonColor: "#40c057",
     });
   });
 };
