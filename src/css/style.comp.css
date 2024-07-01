@@ -131,15 +131,15 @@ body {
         content: "";
         display: block;
         height: 1px;
-        width: 100%;
+        width: 80%;
         background: linear-gradient(#f8f9fa, #f8f9fa);
         background-repeat: no-repeat;
         background-size: 0% 1px;
         transition: background-size 0.3s ease-in-out;
         position: absolute;
         top: 42%;
-        left: -30%;
-        transform: translate(-30%, -42%);
+        left: -17%;
+        transform: translate(-17%, -42%);
         background-position: left-bottom;
         animation: animateBackground 1s ease-in-out;
         animation-fill-mode: forwards;
@@ -148,7 +148,7 @@ body {
         content: "";
         display: block;
         height: 1px;
-        width: 100%;
+        width: 80%;
         background: linear-gradient(#f8f9fa, #f8f9fa);
         background-repeat: no-repeat;
         background-size: 0% 1px;
@@ -156,8 +156,8 @@ body {
         position: absolute;
         background-position: right bottom;
         top: 58%;
-        right: -40%;
-        transform: translate(0%, -58%);
+        right: -17%;
+        transform: translate(17%, -58%);
         animation: animateBackground 1s ease-in-out;
         animation-fill-mode: forwards;
         animation-delay: 1s; }
@@ -528,6 +528,12 @@ textarea.form__input {
   width: 100%;
   pointer-events: auto; }
 
+.navigation.active .navigation__menu {
+  display: none; }
+
+.navigation.active .navigation__close {
+  display: block; }
+
 .navigation__btn {
   position: relative;
   display: flex;
@@ -539,6 +545,9 @@ textarea.form__input {
   padding: 1.6rem;
   z-index: 2000;
   cursor: pointer; }
+
+.navigation__close {
+  display: none; }
 
 .navigation__nav {
   height: 100vh;
