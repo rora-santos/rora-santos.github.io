@@ -186,7 +186,7 @@ body {
         font-size: 3rem; } }
   .heading--tertiary {
     font-family: "Boucherie Block";
-    font-size: 10rem;
+    font-size: 8.2rem;
     line-height: 1; }
     @media screen and (max-width: 48em) {
       .heading--tertiary {
@@ -197,7 +197,7 @@ body {
     font-size: 3.6rem; }
   .heading--greetings {
     font-family: "Boucherie Block";
-    font-size: 6.4rem;
+    font-size: 8.2rem;
     position: relative;
     margin-bottom: 6.4rem; }
     @media screen and (max-width: 37.5em) {
@@ -296,9 +296,12 @@ body {
 .btn--solid, .btn--solid:link, .btn--solid:visited {
   background-color: #f8f9fa;
   color: #0e1111;
-  padding: 1.6rem 2rem;
+  padding: 1.6rem;
   border-radius: 50%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
 
 .btn--solid::after {
   background-color: #f8f9fa; }
@@ -368,59 +371,6 @@ body {
   .contact__link:hover, .contact__link:active {
     color: #0e1111;
     background-color: #f8f9fa; }
-
-.v-slider-frame {
-  border: 1px solid #4bb3fd;
-  height: 50px;
-  overflow: hidden;
-  text-align: center; }
-
-ul.v-slides {
-  list-style-type: none;
-  transform: translateY(50px);
-  padding: 0; }
-
-.v-slide {
-  font-size: 24px;
-  line-height: 50px;
-  color: #4bb3fd; }
-
-.form__group:not(:last-child) {
-  margin-bottom: 2rem; }
-
-.form__input {
-  display: block;
-  width: 100%;
-  padding: 1.6rem 2.4rem;
-  border: none;
-  border-bottom: 4px solid transparent;
-  border-radius: 2px;
-  transition: all 0.3s ease-out; }
-  .form__input:focus {
-    outline: none;
-    border-bottom: 4px solid #40c057; }
-  .form__input:focus:invalid {
-    border-bottom: 4px solid #fd7e14; }
-
-.form__label {
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-top: 0.8rem;
-  margin-left: 2rem;
-  display: block;
-  transition: all 0.3s ease-out; }
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
-
-.form .btn {
-  display: block;
-  margin-left: auto; }
-
-textarea.form__input {
-  resize: none; }
 
 .gallery {
   padding-bottom: 2rem; }
@@ -535,16 +485,7 @@ textarea.form__input {
   display: block; }
 
 .navigation__btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: #f8f9fa;
-  border: none;
-  padding: 1.6rem;
-  z-index: 2000;
-  cursor: pointer; }
+  z-index: 2000; }
 
 .navigation__close {
   display: none; }
@@ -673,8 +614,8 @@ textarea.form__input {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 90vh; }
-  .section--psa {
+  min-height: 85vh; }
+  .section--half {
     min-height: 50vh; }
 
 .about__img {

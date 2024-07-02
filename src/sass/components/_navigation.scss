@@ -17,16 +17,7 @@
   }
 
   &__btn {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: $clr-white;
-    border: none;
-    padding: 1.6rem;
     z-index: 2000;
-    cursor: pointer;
   }
 
   &__close {
