@@ -1,7 +1,7 @@
 .photography {
   &__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 2.4rem;
 
     @media screen and (max-width: $bp-md) {
@@ -10,7 +10,7 @@
   }
 
   &__block {
-    height: 30rem;
+    height: 45rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,6 @@
       background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
         url(/assets/images/portraits/portrait-2.webp);
       @include backgroundConst;
-      background-position: 0 20%;
     }
 
     &--product {

@@ -28,6 +28,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   overscroll-behavior: none;
+  scrollbar-gutter: stable;
 }
 
 html.active {
@@ -40,9 +41,9 @@ body {
   color: $clr-white;
   padding: 2rem;
   scroll-behavior: smooth;
-  overscroll-behavior: none;
   min-height: 100vh;
   overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
 body.active {

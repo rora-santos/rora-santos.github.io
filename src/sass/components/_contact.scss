@@ -38,6 +38,10 @@
         border-right: 1px solid $clr-white;
       }
     }
+
+    &:has(.contact__link:hover) {
+      background-color: $clr-white;
+    }
   }
 
   &__link {
@@ -52,7 +56,6 @@
     &:hover,
     &:active {
       color: $clr-black;
-      background-color: $clr-white;
     }
   }
 }
