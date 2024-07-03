@@ -423,8 +423,7 @@ body {
     width: 80rem; }
     @media screen and (max-width: 62em) {
       .movie__video {
-        margin-bottom: 3.2rem;
-        width: 100%; } }
+        margin-bottom: 3.2rem; } }
   .movie__caption {
     position: absolute;
     font-size: 3.2rem; }
@@ -439,6 +438,9 @@ body {
       left: -20%;
       transform: translate(-30%, -50%);
       text-align: right; }
+      .movie__caption--left--short {
+        left: -10%;
+        transform: translate(-10%, -50%); }
       @media screen and (max-width: 62em) {
         .movie__caption--left {
           top: auto;
@@ -447,21 +449,18 @@ body {
       @media screen and (max-width: 37.5em) {
         .movie__caption--left {
           text-align: left; } }
-      .movie__caption--left--short {
-        left: -10%;
-        transform: translate(-10%, -50%); }
     .movie__caption--right {
       top: 50%;
       right: -30%;
-      transform: translate(-30%, -50%); }
+      transform: translate(30%, -50%); }
+      .movie__caption--right--short {
+        right: -10%;
+        transform: translate(10%, -50%); }
       @media screen and (max-width: 62em) {
         .movie__caption--right {
           top: auto;
           right: auto;
           transform: translate(0, 0); } }
-      .movie__caption--right--short {
-        right: -10%;
-        transform: translate(-10%, -50%); }
   .movie__category {
     display: block;
     font-size: 1.6rem;
@@ -542,6 +541,9 @@ body {
   justify-content: center;
   padding: 2rem;
   text-align: center; }
+  @media screen and (max-width: 37.5em) {
+    .photography__block {
+      height: 30rem; } }
   .photography__block--events {
     background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/events/events-42.webp);
     background-size: cover;
