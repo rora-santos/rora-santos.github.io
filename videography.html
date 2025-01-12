@@ -61,12 +61,17 @@
                 </li>
                 <li class="navigation__item">
                   <a href="videography.html" class="navigation__link"
-                    ><span>03</span>Videography</a
+                    ><span>03</span>Film/Video Projects</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a href="set-design.html" class="navigation__link"
+                    ><span>04</span>Set Design</a
                   >
                 </li>
                 <li class="navigation__item">
                   <a href="psa.html" class="navigation__link"
-                    ><span>04</span>PSA</a
+                    ><span>05</span>PSA</a
                   >
                 </li>
               </ul>
@@ -78,7 +83,24 @@
 
     <main class="videos">
       <div class="u-container">
-        <section class="section--padded row--column">
+        <div class="tabs u-margin-bottom-xl">
+          <button class="btn btn--tab btn--tab--active" data-tab="shortfilm">
+            Short Film
+          </button>
+          <button class="btn btn--tab" data-tab="documentary">
+            Documentary
+          </button>
+          <button class="btn btn--tab" data-tab="interview">Interview</button>
+          <button class="btn btn--tab" data-tab="liveperformance">
+            Live Performance
+          </button>
+          <button class="btn btn--tab" data-tab="asmr">ASMR</button>
+          <button class="btn btn--tab" data-tab="artvideo">Art Video</button>
+        </div>
+
+        <section
+          class="section--padded row--column section--video section--video--shortfilm section--video--active"
+        >
           <div class="row row--end">
             <figure class="movie" data-aos="fade-left">
               <iframe
@@ -178,6 +200,28 @@
             <figure class="movie" data-aos="fade-right">
               <iframe
                 class="movie__video"
+                src="https://www.youtube.com/embed/BxnS4UtLJeE?si=mCkqnyv57ZJNKFNp"
+                title="Bahay, Baboy, Bagyo"
+                frameborder="0"
+              ></iframe>
+
+              <figcaption
+                class="movie__caption movie__caption--right movie__caption--right--short"
+              >
+                Bahay, Baboy, Bagyo
+                <span class="movie__category">Short Film</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section
+          class="section--padded row--column section--video section--video--documentary"
+        >
+          <div class="row">
+            <figure class="movie" data-aos="fade-right">
+              <iframe
+                class="movie__video"
                 src="https://www.youtube.com/embed/o6VnIXmU6ac?si=7_hIjB8K0VAnSOJt"
                 loading="lazy"
                 frameborder="0"
@@ -232,7 +276,11 @@
               </figcaption>
             </figure>
           </div>
+        </section>
 
+        <section
+          class="section--padded row--column section--video section--video--liveperformance"
+        >
           <div class="row row--end">
             <figure class="movie" data-aos="fade-left">
               <iframe
@@ -468,23 +516,109 @@
             <figure class="movie" data-aos="fade-right">
               <iframe
                 class="movie__video"
-                src="https://www.youtube.com/embed/p5NxVktHMsk?si=1HT2ZoooJE48W9NF"
+                src="https://www.youtube.com/embed/6wWyo2y5y1U?si=jeW_T01Ld6_Xa_0G"
+                title="MANILA Battle Rap for 300.000 PHP"
+                frameborder="0"
+                loading="lazy"
+              ></iframe>
+
+              <figcaption
+                class="movie__caption movie__caption--right movie__caption--right--short"
+              >
+                MANILA Battle Rap <br />
+                for 300.000 PHP
+                <span class="movie__category">Live Performance</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="row row--end">
+            <figure class="movie" data-aos="fade-left">
+              <iframe
+                class="movie__video"
+                src="https://www.youtube.com/embed/Eh8zk8B3LPw?si=vQiTVHfqZgy5FVyN"
+                title="YouTube video player"
                 loading="lazy"
                 frameborder="0"
-                title="Crafting a Polymer Clay Dog by Hand"
+                title="Kung Sakaling Muling Magkita by sciscisci"
+              ></iframe>
+
+              <figcaption class="movie__caption movie__caption--left">
+                Semi-Finals <br />ng Battle Rap! [MANILA]
+
+                <span class="movie__category">Live Performance</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="row">
+            <figure class="movie" data-aos="fade-right">
+              <iframe
+                class="movie__video"
+                src="https://www.youtube.com/embed/YcTQJXrs_LM?si=P3BUb0rjH5mMK-SN"
+                title="RUSTY M vs GIN [FINAL ROUND MANILA] | Skyline Slam"
+                frameborder="0"
+                loading="lazy"
+              ></iframe>
+
+              <figcaption
+                class="movie__caption movie__caption--right movie__caption--right--short"
+              >
+                RUSTY M vs GIN <br />
+                [FINAL ROUND MANILA]
+                <span class="movie__category">Live Performance</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="row row--end">
+            <figure class="movie" data-aos="fade-left">
+              <iframe
+                class="movie__video"
+                src="https://www.youtube.com/embed/_9B3Y2-87sA?si=4p5FPU1lvRuMjGaj"
+                title="Eliza Maturan - Museo, Siguro Sigurado, Wag Muna"
+                frameborder="0"
+                loading="lazy"
+              ></iframe>
+
+              <figcaption class="movie__caption movie__caption--left">
+                Eliza Maturan <br />
+                - Museo, Siguro Sigurado, Wag Muna
+
+                <span class="movie__category">Live Performance</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section
+          class="section--padded row--column section--video section--video--interview"
+        >
+          <div class="row">
+            <figure class="movie" data-aos="fade-right">
+              <iframe
+                class="movie__video"
+                src="https://www.youtube.com/embed/99MeeWHFg2c?si=dvn3pjYPRDMabb3g"
+                loading="lazy"
+                frameborder="0"
+                title="Fortrust Education Services grows with Adventus.io"
               >
               </iframe>
 
               <figcaption
                 class="movie__caption movie__caption--right movie__caption--right--short"
               >
-                Crafting a Polymer <br />
-                Clay Dog by Hand
+                Fortrust Education Service <br />
+                Grows with Adventus.io
                 <span class="movie__category">Live Performance</span>
               </figcaption>
             </figure>
           </div>
+        </section>
 
+        <section
+          class="section--padded row--column section--video section--video--asmr"
+        >
           <div class="row row--end">
             <figure class="movie" data-aos="fade-left">
               <iframe
@@ -504,23 +638,27 @@
               </figcaption>
             </figure>
           </div>
+        </section>
 
+        <section
+          class="section--padded row--column section--video--artvideo section--video"
+        >
           <div class="row">
             <figure class="movie" data-aos="fade-right">
               <iframe
                 class="movie__video"
-                src="https://www.youtube.com/embed/99MeeWHFg2c?si=dvn3pjYPRDMabb3g"
+                src="https://www.youtube.com/embed/p5NxVktHMsk?si=1HT2ZoooJE48W9NF"
                 loading="lazy"
                 frameborder="0"
-                title="Fortrust Education Services grows with Adventus.io"
+                title="Crafting a Polymer Clay Dog by Hand"
               >
               </iframe>
 
               <figcaption
                 class="movie__caption movie__caption--right movie__caption--right--short"
               >
-                Fortrust Education Service <br />
-                Grows with Adventus.io
+                Crafting a Polymer <br />
+                Clay Dog by Hand
                 <span class="movie__category">Live Performance</span>
               </figcaption>
             </figure>

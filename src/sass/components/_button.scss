@@ -80,4 +80,21 @@
       color: $clr-black;
     }
   }
+
+  &--tab {
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 1px solid $clr-white;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $clr-black;
+      background: $clr-white;
+    }
+
+    &--active {
+      color: $clr-black;
+      background-color: $clr-white;
+    }
+  }
 }

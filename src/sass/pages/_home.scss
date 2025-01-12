@@ -9,6 +9,14 @@
   &--half {
     min-height: 50vh;
   }
+
+  &--video {
+    display: none;
+
+    &--active {
+      display: flex;
+    }
+  }
 }
 
 .about__img {

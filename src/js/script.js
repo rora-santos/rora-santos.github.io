@@ -16,6 +16,10 @@ const fullname = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
 
+const btnTabs = document.querySelectorAll(".btn--tab");
+const tabs = document.querySelector(".tabs");
+const contentTabs = document.querySelectorAll(".section--video");
+
 btnNav.addEventListener("click", () => {
   html.classList.toggle("active");
   body.classList.toggle("active");
@@ -44,6 +48,24 @@ const renderGallery = () => {
     wrapAround: true,
   });
 };
+
+if (tabs) {
+  tabs.addEventListener("click", function (e) {
+    const clicked = e.target.closest(".btn--tab");
+
+    if (!clicked) return;
+
+    btnTabs.forEach((tab) => tab.classList.remove("btn--tab--active"));
+    contentTabs.forEach((content) =>
+      content.classList.remove("section--video--active")
+    );
+
+    clicked.classList.add("btn--tab--active");
+    document
+      .querySelector(`.section--video--${clicked.dataset.tab}`)
+      .classList.add("section--video--active");
+  });
+}
 
 const renderGreetings = () => {
   if (!home) return;
